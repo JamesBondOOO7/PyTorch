@@ -232,4 +232,5 @@ plot_confusion_matrix(cm, list(range(10)))
 misclassified_idx = np.where(p_test != y_test)[0]
 i = np.random.choice(misclassified_idx)
 plt.imshow(x_test[i], cmap='gray')
-plt.title("True label: %s Predicted: %s" % (y_test[i], int(p_test[i])));
+plt.title("True label: %s Predicted: %s" % (y_test[i], int(p_test[i])))
+plt.show()
