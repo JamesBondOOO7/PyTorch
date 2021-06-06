@@ -93,7 +93,7 @@ class CNN(nn.Module):
 
         # final dense layer
         out = self.fc(out)
-        
+
         return out
 
 model = CNN(
